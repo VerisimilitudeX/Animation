@@ -22,4 +22,4 @@ while (50 + offset) < 600:
     
     pygame.display.flip()
 
-input("Hit enter to close window")
+input("Press enter to close window")
