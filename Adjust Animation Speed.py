@@ -16,17 +16,14 @@ feather_rect = pygame.Rect(330, feather_y, 40, 80)
 feather_offset = 0
 rock_offset = 0
 
-# Declare variable for frame delay
 frame_delay = 40
 
-# Declare variables for speed
 rock_speed = 2
 
 
 frames = 0
 while frames < 100:
 
-    # Change offset by using speed
     rock_offset += 6
     feather_offset += 2
 
@@ -42,11 +39,8 @@ while frames < 100:
 
     frames += 1
 
-    # Slow motion
     if frames == 50:
         frame_delay = 100
 
-
-    # Speed up rock
 if frames % 5 == 0:
     rock_speed += 1
