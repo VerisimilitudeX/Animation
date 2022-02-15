@@ -14,13 +14,11 @@ road_rect = pygame.Rect(0, 120, 600, 160)
 
 car_offset = 0
 
-# Declare variable for speed
 speed = 0
 
 frames = 0
 while frames < 200:
 
-    # Change offsets by using speed
     car_offset += speed + 1
 
     car_rect.x = car_x + car_offset
@@ -34,6 +32,5 @@ while frames < 200:
 
     frames += 1
 
-    # Speed up car every five frames
     if speed % 5 == 0:
         speed += 2
