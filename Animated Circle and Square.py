@@ -9,7 +9,7 @@ r = pygame.Rect(300, 150, 25, 25)
 b = (0, 0, 0)
 offset = 0
 while (50 + offset) < 600:
-# Draw your shapes here
+
     window.fill((255, 255, 255))
     
     r.x = 300 + offset
