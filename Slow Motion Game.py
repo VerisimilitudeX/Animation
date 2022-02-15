@@ -18,7 +18,6 @@ jumper_offset = 0
 arrow_offset = 0
 jump_speed = 0
 
-# Declare variable for frame delay
 frame_delay = 40
 
 frames = 0
@@ -38,7 +37,6 @@ while frames < 100:
 
     pygame.display.flip()
 
-    # Change to use the frame delay variable
     pygame.time.wait(frame_delay)
 
     frames += 1
@@ -52,10 +50,8 @@ while frames < 100:
     if frames == 60:
         jump_speed = 0
 
-    # Turn on slow motion on frame 30
     if frames / 30 == 1:
         frame_delay = 200
 
-    # Turn off slow motion on frame 50
     if frames / 50 == 1:
         frame_delay = 20
