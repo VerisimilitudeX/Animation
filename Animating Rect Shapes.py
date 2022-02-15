@@ -12,16 +12,13 @@ r_y_start = 0
 e_x_start = 0
 e_y_start = 50
 
-# Declare an offset for each shape
 offset = 0
 
 frames = 0
 while frames < 100:
 
-    # Add to each offset
     offset += 1
 
-    # Use the offset to move each Rect
     r_x_start += offset
     r_y_start += offset
     e_x_start += offset
@@ -32,11 +29,9 @@ while frames < 100:
 
     window.fill(ground_color)
 
-    # Draw each shape
     pygame.draw.rect(window, gray, rectangle)
     pygame.draw.ellipse(window, gray, ellipse)
 
-    # Flip and wait every frame
     pygame.display.flip()
     pygame.time.wait(10)
     
