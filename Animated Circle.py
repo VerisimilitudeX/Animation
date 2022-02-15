@@ -10,7 +10,6 @@ right = (400, 400)
 circle_y = 280
 top_y = 300
 
-# Declare the offsets
 circle_offset = 0
 x = 50
 y = 50
@@ -18,7 +17,6 @@ y = 50
 frames = 0
 while frames < 400:
 
-    # Move the position variables
     circle_offset += 1
     center = (x + circle_offset, y)
     window.fill((255, 255, 255))
