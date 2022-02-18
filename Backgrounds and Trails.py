@@ -1,9 +1,3 @@
-"""
-LESSON: 3.3 - Animation
-TECHNIQUE 4: Backgrounds and Trails
-DEMO
-"""
-
 import pygame
 pygame.init()
 
