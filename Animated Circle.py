@@ -20,10 +20,9 @@ while frames < 400:
     circle_offset += 1
     center = (x + circle_offset, y)
     window.fill((255, 255, 255))
-    # Draw the shapes
+
     pygame.draw.circle(window, circle_color, center, 10)
 
-    # Flip and wait every frame
     pygame.display.flip() 
     pygame.time.wait(1)
 
