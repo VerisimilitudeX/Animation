@@ -1,6 +1,7 @@
-
 import pygame
 pygame.init()
+c = pygame.time.Clock()
+
 window = pygame.display.set_mode([400, 400])
 window.fill((221, 31, 121))
 count = 0
@@ -115,7 +116,7 @@ while count <= 2:
         pygame.display.flip()
         window.fill((21, 31, 121))
         pygame.time.wait(10)
-
+    c.tick(60)
     pygame.time.wait(100)
     count += 1
 pygame.init()
